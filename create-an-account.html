@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+      .text {
+        color: #5c068c !important;
+      }
+      .background {
+        background-color: #5c068c;
+      }
+      .styled-section {
+        /* border-bottom-left-radius: 20px; */
+        /* border-bottom-right-radius: 100px; */
+      }
+      .section {
+        margin: 100px 0;
+      }
+      .styled-font {
+        font-family: "Dancing Script", cursive;
+      }
+      .avatar-img {
+        padding: 10px 3px;
+        height: 97%;
+        width: 97%;
+        border-radius: 20px;
+      }
+      .avatar-img::before {
+        border-right: 4px solid #000;
+      }
+      .image-container {
+        position: relative;
+        height: 220px;
+        width: 220px;
+        border-radius: 20px;
+      }
+      .online {
+        height: 15px;
+        width: 15px;
+        background-color: rgba(45, 183, 12, 1);
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+      }
+      .icon-container {
+        width: 15%;
+        padding: 20px 0;
+        position: relative;
+      }
+      .sprinkles {
+        position: absolute;
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+      }
+      .one {
+        right: 30px;
+        opacity: 0.5;
+      }
+      .two {
+        right: 15px;
+        top: 40px;
+        opacity: 0.6;
+      }
+      .three {
+        bottom: 10px;
+        right: 10px;
+        height: 8px;
+        width: 8px;
+        opacity: 0.4;
+      }
+      .four {
+        left: 20px;
+        opacity: 0.4;
+      }
+      .five {
+        left: 20px;
+        bottom: 35px;
+        height: 6px;
+        width: 6px;
+        opacity: 0.7;
+      }
+      .six {
+        left: 40px;
+        bottom: 0;
+        height: 8px;
+        width: 8px;
+        opacity: 0.5;
+      }
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before , .custom-radio .custom-control-input:checked~.custom-control-label::before{
+  background-color:#5C068C !important;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow:none !important;
+}
+    </style>
+  </head>
+  <body>
+    <header class="shadow">
+      <div class="container-fluid m-auto" style="width: 87%">
+        <p class="text-right pt-3 pb-3">
+          <a href="" class="text-dark">Blog</a> |
+          <a href="" class="text-dark">Customer Services</a> |
+          <a href="" class="text-dark">Contact</a>
+        </p>
+      </div>
+      <nav
+        class="navbar m-auto navbar-expand-sm navbar-light pb-5"
+        style="width: 87%"
+      >
+        <a class="navbar-brand" href="index.html">
+          <h2 class="text">
+            <span style="border-bottom: 4px solid #5c068c">Pro</span>-Advice
+          </h2>
+        </a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">List Your Expert Profile </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Advice Seeker</a>
+            </li>
+          </ul>
+          <div class="my-2 my-lg-0">
+            <button class="btn my-2 my-sm-0 mr-2" data-toggle="modal" data-target="#modelId">Login</button>
+            <button
+              class="btn btn-warning my-2 my-sm-0 text-uppercase"
+              type="submit"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="section">
+      <div class="card w-75 m-auto shadow">
+        <div class="card-header" style="background-color: #5c068c">
+          <div class="row pt-3 pb-3 pl-5 pr-5 text-white">
+            <div class="col-8">
+              <h1>Create an account</h1>
+            </div>
+            <div
+              class="col-4"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+              "
+            >
+              <p>Already have an account? <b>Login</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="card-body p-5">
+          <form action="" class="container w-75">
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id=""
+                    placeholder="Enter your First Name"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for=""></label>
+                  <input
+                    type="text"
+                    class="form-control mt-2"
+                    name=""
+                    id=""
+                    placeholder="Enter your Last Name"
+                  />
+                </div>
+              </div>
+            </div>
+            <label for="">Date of birth</label>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <input
+                    type="number"
+                    class="form-control"
+                    name=""
+                    id=""
+                    placeholder="MM"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <input
+                    type="number"
+                    class="form-control"
+                    name=""
+                    id=""
+                    placeholder="DD"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <input
+                    type="number"
+                    class="form-control"
+                    name=""
+                    id=""
+                    placeholder="YY"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col h-100">
+                <div class="form-group">
+                  <label for="">Sex</label>
+                  <div class="form-control">
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="customControlValidation1"
+                        name="radio-stacked"
+                        required
+                      />
+                      <label
+                        class="custom-control-label"
+                        for="customControlValidation1"
+                        >Male</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for=""></label>
+                  <div class="form-control mt-2">
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="customControlValidation2"
+                        name="radio-stacked"
+                        required
+                      />
+                      <label
+                        class="custom-control-label"
+                        for="customControlValidation2"
+                        >Female</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="">Email Id</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    name=""
+                    id=""
+                    placeholder="Enter your email id"
+                  />
+                </div>
+              </div>
+             
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="">Confirm your Email Id</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    name=""
+                    id=""
+                    placeholder="Re-enter your email id"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    name=""
+                    id=""
+                    placeholder="Enter your password"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">I have read and accept ProAdvice <a href="#" style="color: #5c068c;">Terms of Use</a> and <a href="#" style="color: #5c068c;">Privacy Policy</a> </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col">
+                <center>
+            <button type="button" name="" id="" style="font-weight: 700;padding: 10px 20px;" class="btn btn-warning  text-uppercase btn-block">Save & Continue</button>
+          </center>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer style="background-color: #000033" class="p-5">
+      <div class="row m-auto" style="width: 80%">
+        <div class="col">
+          <h5 class="text-white">ProAdvice</h5>
+          <br />
+          <ul style="list-style: none" class="m-auto p-0">
+            <li><a href="" class="text-white">Home</a></li>
+            <li><a href="" class="text-white">About Us</a></li>
+            <li><a href="" class="text-white">Press</a></li>
+            <li><a href="" class="text-white">Careers</a></li>
+            <li><a href="" class="text-white">Contact Us</a></li>
+            <li><a href="" class="text-white">Help</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5 class="text-white">Top Specialties</h5>
+          <br />
+          <ul style="list-style: none" class="m-auto p-0">
+            <li><a href="" class="text-white">Primary Care Doctor</a></li>
+            <li><a href="" class="text-white">Dermatologist</a></li>
+            <li><a href="" class="text-white">OB-GYN</a></li>
+            <li><a href="" class="text-white">Dentist</a></li>
+            <li><a href="" class="text-white">Psychiatrist</a></li>
+            <li><a href="" class="text-white">Ear, Nose & Throat Doctor</a></li>
+            <li><a href="" class="text-white">Podiatrist</a></li>
+            <li><a href="" class="text-white">Urologist</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5 class="text-white">Are you a top doctor or health service ?</h5>
+          <br />
+          <ul style="list-style: none" class="m-auto p-0">
+            <li>
+              <a href="" class="text-white">List your practice on ProAdvice</a>
+            </li>
+            <li><a href="" class="text-white">Become and API partner</a></li>
+          </ul>
+          <br />
+          <h5 class="text-white">Get the ProAdvice App</h5>
+          <br />
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            name=""
+            id=""
+            style="border-radius: 0"
+            class="btn btn-outline-warning btn-lg btn-block"
+          >
+            Find Experts Now
+          </button>
+          <br />
+          <button
+            type="button"
+            name=""
+            id=""
+            style="border-radius: 0"
+            class="btn btn-outline-warning btn-lg btn-block"
+          >
+            Become an Expert
+          </button>
+        </div>
+      </div>
+    </footer>
+    <div class="p-4 text-white" style="background-color: #5c068c">
+      <div style="width: 80%" class="m-auto">
+        <div class="row">
+          <div class="col-sm-12 col-md-10">
+            ProAdvice © 2021 &nbsp;&nbsp;
+            <a class="text-reset fw-bold" href="">Terms</a> &nbsp;
+            <a class="text-reset fw-bold" href="">Privacy</a> &nbsp;
+            <a class="text-reset fw-bold" href=""
+              >Do not sell my personal information</a
+            >
+            &nbsp;
+            <a class="text-reset fw-bold" href=""
+              >Site map <i class="fas fa-chevron-down"></i
+            ></a>
+          </div>
+          <div class="col">
+            <a href=""
+              ><i
+                class="fa fa-twitter text-warning m-2"
+                style="font-size: 22px"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                class="fa fa-instagram text-warning m-2"
+                style="font-size: 22px"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                class="fa fa-facebook text-warning m-2"
+                style="font-size: 22px"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                class="fa fa-linkedin text-warning m-2"
+                style="font-size: 22px"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content p-4">
+              <div class="modal-body" style="position: relative;">
+                  <button type="button" style="position: absolute; right: 10px; top: 10px; border-radius: 50%; " class="btn btn-sm btn-dark" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                  <center style="width: 60%" class="m-auto">
+                      <h3 class="font-weight-bold">Login to book your appointment</h3>
+                      <br>
+                      <button type="button" style="border-radius: 0%;" name="" id="" class="btn btn-outline-dark btn-block"><i class="fa fa-google float-left pt-1" aria-hidden="true"></i> Login with Google</button>
+                      <button type="button" style="border-radius: 0%;" name="" id="" class="btn btn-outline-dark btn-block"><i class="fa fa-facebook float-left pt-1" aria-hidden="true"></i> Login with Facebook</button>
+                      <button type="button" style="border-radius: 0%;" name="" id="" class="btn btn-outline-dark btn-block"><i class="fa fa-apple float-left pt-1" aria-hidden="true"></i> Login with Apple</button>
+                      <br>
+                      <hr />
+                      OR
+                      <hr />
+
+                      <div class="form-group">
+                          <label for="" class="float-left font-weight-bold">Email Id</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            name=""
+                            id=""
+                            placeholder="Enter your email id"
+                          />
+                        </div>
+                        <div class="form-group ">
+                          <label for="" class="float-left font-weight-bold">Password</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            name=""
+                            id=""
+                            placeholder="Enter your password"
+                          />
+                        </div>
+                        <button class="btn text float-right" id="button-forgot-password" style="text-decoration: underline;">Forgot Password ?</button>
+                      <button type="button" style="border-radius: 0%;" name="" id="" class="btn btn-warning font-weight-bold btn-block">Login</button>
+<br>
+                       <p>   New to ProAdvice? &nbsp;<a href="#" class="text" style="text-decoration: underline;">Create an account ?</a></p>
+
+                  </center>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+  <div class="modal fade" id="modelId2" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content p-4">
+              <div class="modal-body" style="position: relative;">
+                  <button type="button" style="position: absolute; right: 10px; top: 10px; border-radius: 50%; " class="btn btn-sm btn-dark" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                  <center style="width: 70%" class="m-auto">
+                      <h3 class="font-weight-bold">Forgot Password ?</h3>
+                      <br>
+                      <p style="font-size: 18px;">Don't worry, we just need your registered Email Id to email you a link to make a brand new password.</p>
+                      <br>
+
+                      <div class="form-group">
+                          <label for="" class="float-left font-weight-bold">Email Id</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            name=""
+                            id=""
+                            placeholder="Enter your email id"
+                          />
+                        </div>
+                       
+                      <button type="button" style="border-radius: 0%;" name="" id="" class="btn btn-warning font-weight-bold btn-block w-100">Send</button>
+<br>
+
+                  </center>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c29f01844b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

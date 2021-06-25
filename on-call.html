@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .text {
+        color: #5c068c !important;
+      }
+      .background {
+        background-color: #5c068c;
+      }
+      .styled-section {
+        /* border-bottom-left-radius: 20px; */
+        /* border-bottom-right-radius: 100px; */
+      }
+      .section {
+        margin: 100px auto;
+      }
+      .breadcrumb-item + .breadcrumb-item::before {
+        color: white !important;
+      }
+      .btn-outline-special {
+        color: #5c068c;
+        border-color: #5c068c;
+        border-radius: 0%;
+      }
+      .btn-outline-special:hover {
+        color: white;
+        background-color: #5c068c;
+      }
+      .btn-background {
+        color: white;
+        background-color: rgba(92, 6, 140, 0.8);
+        border-radius: 0%;
+      }
+      .btn-background:hover {
+        color: white;
+
+        background-color: rgba(92, 6, 140, 1);
+      }
+      .icon-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 14px;
+        width: 65px;
+      }
+      .online {
+        height: 15px;
+          width: 15px;
+          background-color: rgba(45, 183, 12, 1);
+          border-radius: 50%;
+          position: absolute;
+          bottom: 0;
+          right: 5px;
+      }
+      .avatar-img {
+          padding: 10px 3px;
+          height: 97%;
+          width:  97%;
+          border-radius: 20px;
+      }
+      .avatar-img::before {
+          border-right: 4px solid #000;
+      }
+      .image-container {
+          position: relative;
+          height: 100%;
+          border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="shadow">
+        <div class="container-fluid m-auto" style="width: 87%">
+          <p class="text-right pt-3 pb-3">
+            <a href="" class="text-dark">Blog</a> |
+            <a href="" class="text-dark">Customer Services</a> |
+            <a href="" class="text-dark">Contact</a>
+          </p>
+        </div>
+        <nav
+          class="navbar m-auto navbar-expand-sm navbar-light pb-5"
+          style="width: 87%"
+        >
+          <a class="navbar-brand" href="index.html">
+            <h2 class="text">
+              <span style="border-bottom: 4px solid #5c068c">Pro</span>-Advice
+            </h2>
+          </a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">List Your Expert Profile </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Advice Seeker</a>
+              </li>
+            </ul>
+            <div class="my-2 my-lg-0">
+              <button class="btn my-2 my-sm-0 mr-2" data-toggle="modal" data-target="#modelId">Login</button>
+              <button
+                class="btn btn-warning my-2 my-sm-0 text-uppercase"
+                type="submit"
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <header style="background-color: #5c068c" class="pb-3 pt-1">
+      <div style="width: 80%" class="m-auto text-white">
+        <div class="row">
+          <div class="col-sm-12 col-md-10">
+            <nav class="breadcrumb bg-transparent">
+              <a class="breadcrumb-item text-white" href="#">On Call</a>
+            </nav>
+            <h4 class="font-weight-bolder pl-3">
+             Call with Dr. Ruby Perrin
+            </h4>
+          </div>
+         
+        </div>
+      </div>
+    </header>
+
+   <section class="section" style="width: 80%;">
+       <div class="card shadow">
+           <div class="card-header p-4">
+            <div class="row">
+                <div class="col">
+                    <div class="float-left">
+                        <img src="./images/ruby.png" alt="user" height="50px" width="50px" style="border-radius: 50%; padding: 4px; border: 2px solid #000;">
+
+                    </div>
+                    <div class="float-left pl-4">
+                        <h5>Lucy Sen</h5>
+                        <small class="text-success font-weight-bold">Online</small>
+                </div>
+                    
+             </div>
+            <button type="button" class="btn" style="border-radius: 50%; height: 50px; width: 50px; position: absolute; right: 20px;"><i class="fa fa-cog" aria-hidden="true"></i></button>
+
+           </div>
+        </div>
+           <div class="card-body">
+               <center>
+                <img src="./images/ruby.png" alt="user" height="200px" width="200px" style="border-radius: 50%;">
+                <br>
+                <br>
+                <h3 class="font-weight-bold">Dr. Ruby Perrin</h3>
+                <p>59:00</p>   
+                <br>
+                <br>
+                <img src="./images/ruby.png" alt="user" height="90px" width="90px" style="border-radius: 50%; padding: 4px; border: 2px solid #000;">
+                <br>
+                <br>
+                <br>
+                <br>
+            </center>
+            
+           </div>
+           <div class="card-footer p-5">
+               <div class="row">
+                   <div class="col" style="display: flex; align-items: center; justify-content: center;">
+                        <button type="button" class="btn btn-secondary" style="border-radius: 50%; height: 50px; width: 50px;"><i class="fa fa-video-camera" aria-hidden="true"></i></button> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="button" class="btn btn-warning" style="border-radius: 50%; height: 50px; width: 50px;"><i class="fa fa-microphone" aria-hidden="true"></i></button> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="button" class="btn btn-secondary" style="border-radius: 50%; height: 50px; width: 50px;"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
+                </div>
+                <button type="button" class="btn btn-danger" style="border-radius: 50%; height: 50px; width: 50px; position: absolute; right: 30px;"><i class="fa fa-phone-slash" aria-hidden="true"></i></button>
+
+               </div>
+           </div>
+       </div>
+   </section>
+
+    <footer style="background-color: #000033" class="p-5">
+      <div class="row m-auto" style="width: 80%">
+        <div class="col">
+          <h5 class="text-white">ProAdvice</h5>
+          <br />
+          <ul style="list-style: none" class="m-auto p-0">
+            <li><a href="" class="text-white">Home</a></li>
+            <li><a href="" class="text-white">About Us</a></li>
+            <li><a href="" class="text-white">Press</a></li>
+            <li><a href="" class="text-white">Careers</a></li>
+            <li><a href="" class="text-white">Contact Us</a></li>
+            <li><a href="" class="text-white">Help</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5 class="text-white">Top Specialties</h5>
+          <br />
+          <ul style="list-style: none" class="m-auto p-0">
+            <li><a href="" class="text-white">Primary Care Doctor</a></li>
+            <li><a href="" class="text-white">Dermatologist</a></li>
+            <li><a href="" class="text-white">OB-GYN</a></li>
+            <li><a href="" class="text-white">Dentist</a></li>
+            <li><a href="" class="text-white">Psychiatrist</a></li>
+            <li><a href="" class="text-white">Ear, Nose & Throat Doctor</a></li>
+            <li><a href="" class="text-white">Podiatrist</a></li>
+            <li><a href="" class="text-white">Urologist</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5 class="text-white">Are you a top doctor or health service ?</h5>
+          <br />
+          <ul style="list-style: none" class="m-auto p-0">
+            <li>
+              <a href="" class="text-white">List your practice on ProAdvice</a>
+            </li>
+            <li><a href="" class="text-white">Become and API partner</a></li>
+          </ul>
+          <br />
+          <h5 class="text-white">Get the ProAdvice App</h5>
+          <br />
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            name=""
+            id=""
+            style="border-radius: 0"
+            class="btn btn-outline-warning btn-lg btn-block"
+          >
+            Find Experts Now
+          </button>
+          <br />
+          <button
+            type="button"
+            name=""
+            id=""
+            style="border-radius: 0"
+            class="btn btn-outline-warning btn-lg btn-block"
+          >
+            Become an Expert
+          </button>
+        </div>
+      </div>
+    </footer>
+    <div class="p-4 text-white" style="background-color: #5c068c">
+      <div style="width: 80%" class="m-auto">
+        <div class="row">
+          <div class="col-sm-12 col-md-10">
+            ProAdvice © 2021 &nbsp;&nbsp;
+            <a class="text-reset fw-bold" href="">Terms</a> &nbsp;
+            <a class="text-reset fw-bold" href="">Privacy</a> &nbsp;
+            <a class="text-reset fw-bold" href=""
+              >Do not sell my personal information</a
+            >
+            &nbsp;
+            <a class="text-reset fw-bold" href=""
+              >Site map <i class="fas fa-chevron-down"></i
+            ></a>
+          </div>
+          <div class="col">
+            <a href=""
+              ><i
+                class="fa fa-twitter text-warning m-2"
+                style="font-size: 22px"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                class="fa fa-instagram text-warning m-2"
+                style="font-size: 22px"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                class="fa fa-facebook text-warning m-2"
+                style="font-size: 22px"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                class="fa fa-linkedin text-warning m-2"
+                style="font-size: 22px"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c29f01844b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+$("#button-forgot-password").on("click", function (e) {
+    e.preventDefault();
+    $("#modelId").modal("hide");
+    $("#modelId2").modal("show");
+})
+    </script>
+
+  </body>
+</html>

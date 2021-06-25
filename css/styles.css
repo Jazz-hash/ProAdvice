@@ -1,0 +1,278 @@
+.text {
+    color: #5c068c !important;
+  }
+  .background {
+    /* background-color: #5c068c; */
+  }
+  .styled-section {
+    background-image: url(./../images/back-two.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
+  .section {
+    margin: 100px 0;
+  }
+  .people-container {
+    background-image: url(./../images/people.png);
+  }
+  .people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: rgba(0, 0, 51, 0.6);
+    color: white;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .people {
+      height: 450px;
+    }
+  }
+  .btn-outline-special {
+    color: #5c068c;
+    border-color: #5c068c;
+    border-radius: 0%;
+  }
+  .btn-outline-special:hover {
+    color: white;
+    background-color: #5c068c;
+  }
+  .carousel-indicators > li {
+    border-radius: 50% !important;
+    width: 8px !important;
+    height: 8px !important;
+    background-color: gray;
+  }
+  .carousel-indicators > li.active {
+    background-color: black;
+  }
+  .carousel-indicators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-background {
+    color: white;
+    background-color: rgba(92, 6, 140, 0.8);
+    border-radius: 0%;
+  }
+  .btn-outline-special-two {
+color: rgb(0, 0, 51);
+border-color: rgb(0, 0, 51);
+
+  }
+  .btn-outline-special-two:hover {
+    color:white;
+background-color: rgb(0, 0, 51);
+
+
+  }
+  .btn-background:hover {
+    color: white;
+
+    background-color: rgba(92, 6, 140, 1);
+  }
+  .image-container {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      border-radius: 20px;
+  }
+  .online {
+      height: 15px;
+      width: 15px;
+      background-color: rgba(45, 183, 12, 1);
+      border-radius: 50%;
+      position: absolute;
+      bottom: 0;
+      right: 30px;
+  }
+  .avatar-img {
+      padding: 10px 3px;
+      height: 97%;
+      width:  97%;
+      border-radius: 50%;
+  }
+  .svg {
+    background-color: rgb(92, 6, 140);
+  }
+  .svg > svg  {
+    fill: #fff;
+  }
+
+  .header {
+      width: 80%;
+  }
+
+  .search {
+    font-size: 18px;
+  }
+  .form-head, .p-head  {
+      width: 50%;
+  }
+  .card-icons {
+      font-size: 50px;
+  }
+  
+.form-group > input {
+    border-radius: 0%; width: 72%
+
+} 
+.form-group > input {
+    border-radius: 0%; width: 25%
+
+} 
+
+.five > h1 {
+    font-size: 80px
+}
+  @media screen and (max-width: 425px) {
+      .section {
+          margin: 50px 0;
+      }
+      .header {
+          width: 100%;
+          font-size: 13px;
+      }
+      .navbar-brand > h2 {
+          font-size: 30px;
+      }
+      .navbar {
+          width: 93% !important;
+      }
+  .search {
+      font-size: 15px;
+  }
+  .form-head, .p-head {
+    width: 100%;
+}
+.special-text {
+    font-size: 20px;
+}
+.special-text > span {
+    border-width: 2px !important;
+}
+.card-icons {
+    font-size: 30px;
+}
+.row-center > h3 {
+    font-size: 23px;
+}
+.row-center > a {
+    font-size: 13px;
+}
+.special {
+    font-size: 12px;
+}
+.one {
+    font-size: 14px;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.image-container-two {
+    padding: 30px 0;
+}
+.image-container-two > img {
+    width: 300px;
+} 
+.gap {
+    padding-top: 40px;
+} 
+
+.form-group> input {
+    width: 55%;
+    float: left;
+}
+.form-group> a {
+    font-size: 10px;
+    padding: 9px 0px !important;
+    width: 35% !important;
+    float: left;
+
+}
+.h5 {
+    font-size: 15px !important;
+}
+.extra > h3 {
+font-size: 18px;
+}
+.extra > h5 {
+    font-size: 13px;
+}
+.five > h1 {
+    font-size: 50px
+}
+.special-row {
+    font-size: 12px;
+}
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  }
+
+  .iphone-img {
+      width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    .iphone-img {
+        width: auto;
+    }
+    
+.image-container-two {
+    padding: 30px 0;
+}
+
+.gap {
+    padding-top: 40px;/
+} 
+
+.form-group> input {
+    width: 55%;
+    float: left;
+}
+.form-group> a {
+    font-size: 10px;
+    padding: 9px 0px !important;
+    width: 35% !important;
+    float: left;
+
+}
+
+  }
+  @media screen and (max-width: 1024px) {
+        
+.image-container-two {
+    padding: 30px 0;
+}
+
+.gap {
+} 
+
+.form-group> input {
+    width: 55%;
+    float: left;
+}
+.form-group> a {
+    font-size: 10px;
+    padding: 9px 0px !important;
+    width: 30% !important;
+    float: left;
+
+}
+.iphone-img {
+    height: 450px !important;
+    
+}
+
+.extra-row {
+    margin-top: 30px;
+}
+  }

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .text {
+        color: #5c068c !important;
+      }
+      .background {
+        background-color: #5c068c;
+      }
+      .styled-section {
+        /* border-bottom-left-radius: 20px; */
+        /* border-bottom-right-radius: 100px; */
+      }
+      .section {
+        margin: 100px auto;
+      }
+      .breadcrumb-item + .breadcrumb-item::before {
+        color: white !important;
+      }
+      .btn-outline-special {
+        color: #5c068c;
+        border-color: #5c068c;
+        border-radius: 0%;
+      }
+      .btn-outline-special:hover {
+        color: white;
+        background-color: #5c068c;
+      }
+      .btn-background {
+        color: white;
+        background-color: rgba(92, 6, 140, 0.8);
+        border-radius: 0%;
+      }
+      .btn-background:hover {
+        color: white;
+
+        background-color: rgba(92, 6, 140, 1);
+      }
+      .icon-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 14px;
+        width: 65px;
+      }
+      .online {
+        height: 15px;
+          width: 15px;
+          background-color: rgba(45, 183, 12, 1);
+          border-radius: 50%;
+          position: absolute;
+          bottom: 0;
+          right: 5px;
+      }
+      .avatar-img {
+          padding: 10px 3px;
+          height: 97%;
+          width:  97%;
+          border-radius: 20px;
+      }
+      .avatar-img::before {
+          border-right: 4px solid #000;
+      }
+      .image-container {
+          position: relative;
+          height: 220px;
+          width: 220px;
+          border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid m-auto" style="width: 80%">
+        <p class="text-right pt-3 pb-3">
+          <a href="" class="text-dark">Blog</a> |
+          <a href="" class="text-dark">Customer Services</a> |
+          <a href="" class="text-dark">Contact</a>
+        </p>
+      </div>
+      <nav
+        class="navbar m-auto navbar-expand-sm navbar-light pb-5"
+        style="width: 80%"
+      >
+        <a class="navbar-brand" href="index.html">
+          <h2 class="text">
+            <span style="border-bottom: 4px solid #5c068c">Pro</span>-Advice
+          </h2>
+        </a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">List Your Expert Profile </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Advice Seeker</a>
+            </li>
+          </ul>
+          <div class="my-2 my-lg-0">
+            <button class="btn my-2 my-sm-0 mr-2" data-toggle="modal" data-target="#modelId">Login</button>
+            <button
+              class="btn btn-warning my-2 my-sm-0 text-uppercase"
+              type="submit"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+        <div class="row">
+            <div class="col-4 background p-3">
+                
+            </div>
+            <div class="col-8"></div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c29f01844b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+$("#button-forgot-password").on("click", function (e) {
+    e.preventDefault();
+    $("#modelId").modal("hide");
+    $("#modelId2").modal("show");
+})
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .text {
+        color: #5c068c !important;
+      }
+      .background {
+        background-color: #5c068c;
+      }
+      .styled-section {
+        /* border-bottom-left-radius: 20px; */
+        /* border-bottom-right-radius: 100px; */
+      }
+      .section {
+        margin: 100px auto;
+      }
+      .breadcrumb-item + .breadcrumb-item::before {
+        color: white !important;
+      }
+      .btn-outline-special {
+        color: #5c068c;
+        border-color: #5c068c;
+        border-radius: 0%;
+      }
+      .btn-outline-special:hover {
+        color: white;
+        background-color: #5c068c;
+      }
+      .btn-background {
+        color: white;
+        background-color: rgba(92, 6, 140, 0.8);
+        border-radius: 0%;
+      }
+      .btn-background:hover {
+        color: white;
+
+        background-color: rgba(92, 6, 140, 1);
+      }
+      .icon-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 14px;
+        width: 65px;
+      }
+      .online {
+          float: right;
+          height: 12px;
+          width: 12px;
+          background-color: rgb(45, 183, 12);
+          border-radius: 50%;
+          margin-right: 20px;
+          margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="shadow">
+      <div class="container-fluid m-auto" style="width: 87%">
+        <p class="text-right pt-3 pb-3">
+          <a href="" class="text-dark">Blog</a> |
+          <a href="" class="text-dark">Customer Services</a> |
+          <a href="" class="text-dark">Contact</a>
+        </p>
+      </div>
+      <nav
+        class="navbar m-auto navbar-expand-sm navbar-light pb-5"
+        style="width: 87%"
+      >
+        <a class="navbar-brand" href="index.html">
+          <h2 class="text">
+            <span style="border-bottom: 4px solid #5c068c">Pro</span>-Advice
+          </h2>
+        </a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">List Your Expert Profile </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Advice Seeker</a>
+            </li>
+          </ul>
+          <div class="my-2 my-lg-0">
+            <button class="btn my-2 my-sm-0 mr-2" data-toggle="modal" data-target="#modelId">Login</button>
+            <button
+              class="btn btn-warning my-2 my-sm-0 text-uppercase"
+              type="submit"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <header style="background-color: #5c068c" class="pb-3 pt-1">
+      <div style="width: 80%" class="m-auto text-white">
+        <div class="row">
+          <div class="col-sm-12 col-md-10">
+            <nav class="breadcrumb bg-transparent">
+              <a class="breadcrumb-item text-white" href="#">Home</a>
+              <a class="breadcrumb-item text-white" href="#">Search</a>
+            </nav>
+            <h4 class="font-weight-bolder pl-3">
+              2245 matches found for : Dentist In Bangalore
+            </h4>
+          </div>
+          <div
+            class="col"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <form class="form-inline">
+              <div class="form-group">
+                <label for="">Sort By: &nbsp; &nbsp;</label>
+                <select class="form-control" name="" id="">
+                  <option>Select</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section" style="width: 80%">
+      <div class="row">
+        <div class="col-4 pr-4">
+          <div class="card">
+            <div class="card-header pt-3 pb-1">
+              <p style="font-size: 20px" class="text-center">Search Filter</p>
+            </div>
+            <div class="card-body">
+              <form action="">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id=""
+                    aria-describedby="helpId"
+                    placeholder=""
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="" class="font-weight-bold">Industry</label>
+                  <select class="form-control" name="" id="">
+                    <option>Select</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="" class="font-weight-bold">Specialization</label>
+                  <select class="form-control" name="" id="">
+                    <option>Select</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="" class="font-weight-bold"
+                    >Select Advice Type</label
+                  >
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name=""
+                        id=""
+                        value="checkedValue"
+                        checked
+                      />
+                      Call Advice
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name=""
+                        id=""
+                        value="checkedValue"
+                        checked
+                      />
+                      Chat Advice
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="" class="font-weight-bold">Call Status</label>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name=""
+                        id=""
+                        value="checkedValue"
+                        checked
+                      />
+                      Call Now
+                    </label>
+                    <br />
+                    <small>(Show who are live)</small>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name=""
+                        id=""
+                        value="checkedValue"
+                        checked
+                      />
+                      Chat Later
+                    </label>
+                    <br />
+                    <small>(Schedule call)</small>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="" class="font-weight-bold">Profile Type</label>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name=""
+                        id=""
+                        value="checkedValue"
+                        checked
+                      />
+                      Verified Profiles
+                    </label>
+                    <br />
+                    <small>(Show only verified profiles)</small>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="" class="font-weight-bold">Price Range</label>
+                  <input
+                    type="range"
+                    class="form-control"
+                    name=""
+                    id=""
+                    min="0"
+                    max="3000"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="" class="font-weight-bold"
+                    >Experience (Years)</label
+                  >
+                  <input
+                    type="range"
+                    class="form-control"
+                    name=""
+                    id=""
+                    min="0"
+                    max="3000"
+                  />
+                </div>
+              </form>
+            </div>
+            <div
+              class="card-footer text-white font-weight-bold pt-3 pb-1"
+              style="background-color: #000033"
+            >
+              <p style="font-size: 20px" class="text-center">Advanced Filter</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-8 pl-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="./images/ruby.png"
+                    alt="image"
+                    class="shadow"
+                    style="border-radius: 20px"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-8">
+                  <h3 class="font-weight-bold">
+                    Dr. Ruby Perrin &nbsp;
+                    <i
+                      class="fa fa-check-circle text-warning"
+                      aria-hidden="true"
+                    ></i>
+                    <p class="online"></p>
+                  </h3>
+                  <p>MDS - Periodontology and Oral Implantology, BDS</p>
+                  <p>
+                    <i class="fa fa-user text" aria-hidden="true"></i>
+                    &nbsp;&nbsp; Dentist
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <p>
+                        <i class="fas fa-medal text-warning"></i> &nbsp;<b
+                          >5 years</b
+                        >
+                        of Experience
+                      </p>
+                      <p>
+                        <i class="fas fa-user-friends text-warning"></i>
+                        &nbsp;<b>1220</b>
+                        Advice Provided
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p>
+                        <i class="fas fa-star text-warning"></i> &nbsp;<b
+                          >4.5</b
+                        >
+                        (1202)
+                      </p>
+                      <p>
+                        <i class="fas fa-dollar-sign text-warning"></i> &nbsp;<b
+                          >$1 - $5</b
+                        >
+                        per minute
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+              <div class="row">
+                <div class="col">
+                  <div class="row">
+                    <div class="col" style="display: flex">
+                      <div class="icon-col">
+                        <button
+                          type="button"
+                          name=""
+                          id=""
+                          class="btn btn-outline-dark"
+                        >
+                          <i class="fa fa-phone-alt" aria-hidden="true"></i>
+                        </button>
+                        <p class="text-center">Call Support</p>
+                      </div>
+                      <div class="icon-col">
+                        <button
+                          type="button"
+                          name=""
+                          id=""
+                          class="btn btn-outline-dark"
+                        >
+                          <i class="fa fa-sms" aria-hidden="true"></i>
+                        </button>
+                        <p class="text-center">Chat Support</p>
+                      </div>
+                      <div class="icon-col">
+                        <button
+                          type="button"
+                          name=""
+                          id=""
+                          class="btn btn-outline-dark"
+                        >
+                          <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                        </button>
+                        <p class="text-center">Email Support</p>
+                      </div>
+                      <div class="icon-col">
+                        <button
+                          type="button"
+                          name=""
+                          id=""
+                          class="btn btn-outline-dark"
+                        >
+                          <i class="fa fa-video" aria-hidden="true"></i>
+                        </button>
+                        <p class="text-center">Video Support</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col"
+                  style="
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                  "
+                >
+                  <button
+                    type="button"
+                    name=""
+                    id=""
+                    class="btn btn-lg btn-outline-special"
+                  >
+                    View Profile
+                  </button>
+                  &nbsp;&nbsp;
+                  <button
+                    type="button"
+                    name=""
+                    id=""
+                    class="btn btn-lg btn-background"
+                  >
+                    Call Expert
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow mt-5">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="./images/ruby.png"
+                    alt="image"
+                    class="shadow"
+                    style="border-radius: 20px"
+                    width="100%"
+
+                  />
+                </div>
+                <div class="col-8">
+                  <h3 class="font-weight-bold">
+                    Dr. Ruby Perrin &nbsp;
+                    <i
+                      class="fa fa-check-circle text-warning"
+                      aria-hidden="true"
+                    ></i>
+                    <p class="online"></p>
+
+                  </h3>
+                  <p>MDS - Periodontology and Oral Implantology, BDS</p>
+                  <p>
+                    <i class="fa fa-user text" aria-hidden="true"></i>
+                    &nbsp;&nbsp; Dentist
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <p>
+                        <i class="fas fa-medal text-warning"></i> &nbsp;<b
+                          >5 years</b
+                        >
+                        of Experience
+                      </p>
+                      <p>
+                        <i class="fas fa-user-friends text-warning"></i>
+                        &nbsp;<b>1220</b>
+                        Advice Provided
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p>
+                        <i class="fas fa-star text-warning"></i> &nbsp;<b
+                          >4.5</b
+                        >
+                        (1202)
+                      </p>
+                      <p>
+                        <i class="fas fa-dollar-sign text-warning"></i> &nbsp;<b
+                          >$1 - $5</b
+                        >
+                        per minute
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+              <div class="row">
+                <div class="col">
+                  <div class="row">
+                    <div class="col" style="display: flex">
+                      <div class="icon-col">
+                        <button
+                          type="button"
+                          name=""
+                          id=""
+                          class="btn btn-outline-dark"
+                        >
+                          <i class="fa fa-phone-alt" aria-hidden="true"></i>
+                        </button>
+                        <p class="text-center">Call Support</p>
+                      </div>
+                      <div class="icon-col">
+                        <button
+                          type="button"
+                          name=""
+                          id=""
+                          class="btn btn-outline-dark"
+                        >
+                          <i class="fa fa-sms" aria-hidden="true"></i>
+                        </button>
+                        <p class="text-center">Chat Support</p>
+                      </div>
+                      <div class="icon-col">
+                        <button
+                          type="button"
+                          name=""
+                          id=""
+                          class="btn btn-outline-dark"
+                        >
+                          <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                        </button>
+                        <p class="text-center">Email Support</p>
+                      </div>
+                      <div class="icon-col">
+                        <button
+                          type="button"
+                          name=""
+                          id=""
+                          class="btn btn-outline-dark"
+                        >
+                          <i class="fa fa-video" aria-hidden="true"></i>
+                        </button>
+                        <p class="text-center">Video Support</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col"
+                  style="
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                  "
+                >
+                  <button
+                    type="button"
+                    name=""
+                    id=""
+                    class="btn btn-lg btn-outline-special"
+                  >
+                    View Profile
+                  </button>
+                  &nbsp;&nbsp;
+                  <button
+                    type="button"
+                    name=""
+                    id=""
+                    class="btn btn-lg btn-background"
+                  >
+                    Call Expert
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow mt-5">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="./images/ruby.png"
+                    alt="image"
+                    class="shadow"
+                    style="border-radius: 20px"
+                    width="100%"
+
+                  />
+                </div>
+                <div class="col-8">
+                  <h3 class="font-weight-bold">
+                    Dr. Ruby Perrin &nbsp;
+                    <i
+                      class="fa fa-check-circle text-warning"
+                      aria-hidden="true"
+                    ></i>
+                    <p class="online"></p>
+
+                  </h3>
+                  <p>MDS - Periodontology and Oral Implantology, BDS</p>
+                  <p>
+                    <i class="fa fa-user text" aria-hidden="true"></i>
+                    &nbsp;&nbsp; Dentist
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <p>
+                        <i class="fas fa-medal text-warning"></i> &nbsp;<b
+                          >5 years</b
+                        >
+                        of Experience
+                      </p>
+                      <p>
+                        <i class="fas fa-user-friends text-warning"></i>
+                        &nbsp;<b>1220</b>
+                        Advice Provided
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p>
+                        <i class="fas fa-star text-warning"></i> &nbsp;<b
+                          >4.5</b
+                        >
+                        (1202)
+                      </p>
+                      <p>
+                        <i class="fas fa-dollar-sign text-warning"></i> &nbsp;<b
+                          >$1 - $5</b
+                        >
+                        per minute
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+              <div class="row">
+                <div class="col">
+                  <div class="row">
+                    <div class="col" style="display: flex">
+                      <div class="icon-col">
+                        <button
+                          type="button"
+                          name=""
+                          id=""
+                          class="btn btn-outline-dark"
+                        >
+                          <i class="fa fa-phone-alt" aria-hidden="true"></i>
+                        </button>
+                        <p class="text-center">Call Support</p>
+                      </div>
+                      <div class="icon-col">
+                        <button
+                          type="button"
+                          name=""
+                          id=""
+                          class="btn btn-outline-dark"
+                        >
+                          <i class="fa fa-sms" aria-hidden="true"></i>
+                        </button>
+                        <p class="text-center">Chat Support</p>
+                      </div>
+                      <div class="icon-col">
+                        <button
+                          type="button"
+                          name=""
+                          id=""
+                          class="btn btn-outline-dark"
+                        >
+                          <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                        </button>
+                        <p class="text-center">Email Support</p>
+                      </div>
+                      <div class="icon-col">
+                        <button
+                          type="button"
+                          name=""
+                          id=""
+                          class="btn btn-outline-dark"
+                        >
+                          <i class="fa fa-video" aria-hidden="true"></i>
+                        </button>
+                        <p class="text-center">Video Support</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col"
+                  style="
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                  "
+                >
+                  <button
+                    type="button"
+                    name=""
+                    id=""
+                    class="btn btn-lg btn-outline-special"
+                  >
+                    View Profile
+                  </button>
+                  &nbsp;&nbsp;
+                  <button
+                    type="button"
+                    name=""
+                    id=""
+                    class="btn btn-lg btn-background"
+                  >
+                    Call Expert
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow mt-5">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="./images/ruby.png"
+                    alt="image"
+                    class="shadow"
+                    style="border-radius: 20px"
+                    width="100%"
+
+                  />
+                </div>
+                <div class="col-8">
+                  <h3 class="font-weight-bold">
+                    Dr. Ruby Perrin &nbsp;
+                    <i
+                      class="fa fa-check-circle text-warning"
+                      aria-hidden="true"
+                    ></i>
+                    <p class="online"></p>
+
+                  </h3>
+                  <p>MDS - Periodontology and Oral Implantology, BDS</p>
+                  <p>
+                    <i class="fa fa-user text" aria-hidden="true"></i>
+                    &nbsp;&nbsp; Dentist
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <p>
+                        <i class="fas fa-medal text-warning"></i> &nbsp;<b
+                          >5 years</b
+                        >
+                        of Experience
+                      </p>
+                      <p>
+                        <i class="fas fa-user-friends text-warning"></i>
+                        &nbsp;<b>1220</b>
+                        Advice Provided
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p>
+                        <i class="fas fa-star text-warning"></i> &nbsp;<b
+                          >4.5</b
+                        >
+                        (1202)
+                      </p>
+                      <p>
+                        <i class="fas fa-dollar-sign text-warning"></i> &nbsp;<b
+                          >$1 - $5</b
+                        >
+                        per minute
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+              <div class="row">
+                <div class="col">
+                  <div class="row">
+                    <div class="col" style="display: flex">
+                        <div class="icon-col">
+                            <button
+                              type="button"
+                              name=""
+                              id=""
+                              class="btn btn-outline-dark"
+                            >
+                              <i class="fa fa-phone-alt" aria-hidden="true"></i>
+                            </button>
+                            <p class="text-center">Call Support</p>
+                          </div>
+                        <div class="icon-col">
+                            <button
+                              type="button"
+                              name=""
+                              id=""
+                              class="btn btn-outline-dark"
+                            >
+                              <i class="fa fa-sms" aria-hidden="true"></i>
+                            </button>
+                            <p class="text-center">Chat Support</p>
+                          </div>
+                          <div class="icon-col">
+                            <button
+                              type="button"
+                              name=""
+                              id=""
+                              class="btn btn-outline-dark"
+                            >
+                              <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                            </button>
+                            <p class="text-center">Email Support</p>
+                          </div>
+                          <div class="icon-col">
+                            <button
+                              type="button"
+                              name=""
+                              id=""
+                              class="btn btn-outline-dark"
+                            >
+                              <i class="fa fa-video" aria-hidden="true"></i>
+                            </button>
+                            <p class="text-center">Video Support</p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                <div
+                  class="col"
+                  style="
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                  "
+                >
+                  <button
+                    type="button"
+                    name=""
+                    id=""
+                    class="btn btn-lg btn-outline-special"
+                  >
+                    View Profile
+                  </button>
+                  &nbsp;&nbsp;
+                  <button
+                    type="button"
+                    name=""
+                    id=""
+                    class="btn btn-lg btn-background"
+                  >
+                    Call Expert
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+<center>
+
+          <button
+            type="button"
+            name=""
+            id=""
+            class="btn btn-warning btn-lg font-weight-bold text-uppercase" style="width: 40%;"
+          >
+            View More
+          </button>
+</center>
+
+        </div>
+      </div>
+    </section>
+
+    <footer style="background-color: #000033" class="p-5">
+      <div class="row m-auto" style="width: 80%">
+        <div class="col">
+          <h5 class="text-white">ProAdvice</h5>
+          <br />
+          <ul style="list-style: none" class="m-auto p-0">
+            <li><a href="" class="text-white">Home</a></li>
+            <li><a href="" class="text-white">About Us</a></li>
+            <li><a href="" class="text-white">Press</a></li>
+            <li><a href="" class="text-white">Careers</a></li>
+            <li><a href="" class="text-white">Contact Us</a></li>
+            <li><a href="" class="text-white">Help</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5 class="text-white">Top Specialties</h5>
+          <br />
+          <ul style="list-style: none" class="m-auto p-0">
+            <li><a href="" class="text-white">Primary Care Doctor</a></li>
+            <li><a href="" class="text-white">Dermatologist</a></li>
+            <li><a href="" class="text-white">OB-GYN</a></li>
+            <li><a href="" class="text-white">Dentist</a></li>
+            <li><a href="" class="text-white">Psychiatrist</a></li>
+            <li><a href="" class="text-white">Ear, Nose & Throat Doctor</a></li>
+            <li><a href="" class="text-white">Podiatrist</a></li>
+            <li><a href="" class="text-white">Urologist</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5 class="text-white">Are you a top doctor or health service ?</h5>
+          <br />
+          <ul style="list-style: none" class="m-auto p-0">
+            <li>
+              <a href="" class="text-white">List your practice on ProAdvice</a>
+            </li>
+            <li><a href="" class="text-white">Become and API partner</a></li>
+          </ul>
+          <br />
+          <h5 class="text-white">Get the ProAdvice App</h5>
+          <br />
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            name=""
+            id=""
+            style="border-radius: 0"
+            class="btn btn-outline-warning btn-lg btn-block"
+          >
+            Find Experts Now
+          </button>
+          <br />
+          <button
+            type="button"
+            name=""
+            id=""
+            style="border-radius: 0"
+            class="btn btn-outline-warning btn-lg btn-block"
+          >
+            Become an Expert
+          </button>
+        </div>
+      </div>
+    </footer>
+    <div class="p-4 text-white" style="background-color: #5c068c">
+      <div style="width: 80%" class="m-auto">
+        <div class="row">
+          <div class="col-sm-12 col-md-10">
+            ProAdvice © 2021 &nbsp;&nbsp;
+            <a class="text-reset fw-bold" href="">Terms</a> &nbsp;
+            <a class="text-reset fw-bold" href="">Privacy</a> &nbsp;
+            <a class="text-reset fw-bold" href=""
+              >Do not sell my personal information</a
+            >
+            &nbsp;
+            <a class="text-reset fw-bold" href=""
+              >Site map <i class="fas fa-chevron-down"></i
+            ></a>
+          </div>
+          <div class="col">
+            <a href=""
+              ><i
+                class="fa fa-twitter text-warning m-2"
+                style="font-size: 22px"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                class="fa fa-instagram text-warning m-2"
+                style="font-size: 22px"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                class="fa fa-facebook text-warning m-2"
+                style="font-size: 22px"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                class="fa fa-linkedin text-warning m-2"
+                style="font-size: 22px"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content p-4">
+                <div class="modal-body" style="position: relative;">
+                    <button type="button" style="position: absolute; right: 10px; top: 10px; border-radius: 50%; " class="btn btn-sm btn-dark" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    <center style="width: 60%" class="m-auto">
+                        <h3 class="font-weight-bold">Login to book your appointment</h3>
+                        <br>
+                        <button type="button" style="border-radius: 0%;" name="" id="" class="btn btn-outline-dark btn-block"><i class="fa fa-google float-left pt-1" aria-hidden="true"></i> Login with Google</button>
+                        <button type="button" style="border-radius: 0%;" name="" id="" class="btn btn-outline-dark btn-block"><i class="fa fa-facebook float-left pt-1" aria-hidden="true"></i> Login with Facebook</button>
+                        <button type="button" style="border-radius: 0%;" name="" id="" class="btn btn-outline-dark btn-block"><i class="fa fa-apple float-left pt-1" aria-hidden="true"></i> Login with Apple</button>
+                        <br>
+                        <hr />
+                        OR
+                        <hr />
+
+                        <div class="form-group">
+                            <label for="" class="float-left font-weight-bold">Email Id</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              name=""
+                              id=""
+                              placeholder="Enter your email id"
+                            />
+                          </div>
+                          <div class="form-group ">
+                            <label for="" class="float-left font-weight-bold">Password</label>
+                            <input
+                              type="password"
+                              class="form-control"
+                              name=""
+                              id=""
+                              placeholder="Enter your password"
+                            />
+                          </div>
+                          <button class="btn text float-right" id="button-forgot-password" style="text-decoration: underline;">Forgot Password ?</button>
+                        <button type="button" style="border-radius: 0%;" name="" id="" class="btn btn-warning font-weight-bold btn-block">Login</button>
+<br>
+                         <p>   New to ProAdvice? &nbsp;<a href="#" class="text" style="text-decoration: underline;">Create an account ?</a></p>
+
+                    </center>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modelId2" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content p-4">
+                <div class="modal-body" style="position: relative;">
+                    <button type="button" style="position: absolute; right: 10px; top: 10px; border-radius: 50%; " class="btn btn-sm btn-dark" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    <center style="width: 70%" class="m-auto">
+                        <h3 class="font-weight-bold">Forgot Password ?</h3>
+                        <br>
+                        <p style="font-size: 18px;">Don't worry, we just need your registered Email Id to email you a link to make a brand new password.</p>
+                        <br>
+
+                        <div class="form-group">
+                            <label for="" class="float-left font-weight-bold">Email Id</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              name=""
+                              id=""
+                              placeholder="Enter your email id"
+                            />
+                          </div>
+                         
+                        <button type="button" style="border-radius: 0%;" name="" id="" class="btn btn-warning font-weight-bold btn-block w-100">Send</button>
+<br>
+
+                    </center>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c29f01844b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+$("#button-forgot-password").on("click", function (e) {
+    e.preventDefault();
+    $("#modelId").modal("hide");
+    $("#modelId2").modal("show");
+})
+    </script>
+
+  </body>
+</html>
