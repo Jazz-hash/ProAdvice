@@ -11,7 +11,7 @@
     height: 600px;
   }
   .section {
-    margin: 100px 0;
+    margin: 100px auto;
   }
   .people-container {
     background-image: url(./../images/people.png);
@@ -219,6 +219,7 @@ font-size: 18px;
   }
 
   .iphone-img {
+    display: flex;
       width: 100%;
   }
   @media screen and (max-width: 768px) {
