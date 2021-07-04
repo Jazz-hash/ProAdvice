@@ -222,17 +222,27 @@ font-size: 18px;
     display: flex;
       width: 100%;
   }
+
+  .iphone-img > img {
+    height: 550px;
+  }
+  .iphoness {
+    width: 490px;
+  }
   @media screen and (max-width: 768px) {
     .iphone-img {
         width: auto;
     }
     
+  .iphone-img > img {
+    height: 80%;
+  }
 .image-container-two {
     padding: 30px 0;
 }
 
 .gap {
-    padding-top: 40px;/
+    padding-top: 40px;
 } 
 
 .form-group> input {
@@ -248,6 +258,13 @@ font-size: 18px;
 }
 
   }
+  @media screen and (max-width: 700px) {
+    .iphoness {
+      width: 100%;
+    }
+    
+  }
+
   @media screen and (max-width: 1024px) {
         
 .image-container-two {
