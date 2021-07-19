@@ -94,6 +94,24 @@
         width: 100%;
         border-radius: 50%;
       }
+      .vertical-center {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+      }
+      .custom-active {
+        color: #FAC657 !important;
+      }
+      .custom-active:before {
+  content : "";
+  position: absolute;
+  left    : 10;
+  top  : 90px;
+  height  : 1px;
+  width   : 20px; 
+  border-bottom:4px solid #FAC657;
+}
     </style>
   </head>
   <body>
@@ -129,7 +147,7 @@
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           </ul>
           <div class="my-2 my-lg-0 w-100" style="display: flex; justify-content: flex-end; align-items: center; flex-direction: row;">
-            <a href="" class="text mr-4" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <a href="" class="text custom-active mr-4" style="display: flex; justify-content: center; align-items: center; flex-direction: column;" >
               <i class="fa fa-bell" aria-hidden="true" style="font-size: 30px;"></i>
               <p style="font-size: 14px; font-weight: 500;" class="mt-2">Notifications</p>
             </a>
@@ -156,7 +174,8 @@
     </header>
     <section>
         <div class="row w-100 m-0 p-0">
-            <div class="col-sm-12 col-md-3 background p-3 text-white" style="display: flex; align-content: center; justify-content: center; flex-direction: column;">
+            <div class="col-sm-12 col-md-3 background p-3 text-white">
+                <br>
                 <div class="image-holder m-auto">
                   <img src="./images/ruby.png" alt="user" class="usr-image" />
                 </div>
@@ -165,7 +184,7 @@
                 <p class="text-center"><i class="fa fa-calendar" aria-hidden="true"></i> 02 Jul 1998, 24 years <br> <i class="fa fa-map-marker" aria-hidden="true"></i> New York, USA</p>
                   <hr style="width: 90%; background-color: #B59DC2;" />
                   <div class=" text-center">
-                    <a name="" id="" class="btn mt-2 btn-warning w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Dashboard</a>
+                    <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Dashboard</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; My Appointments</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-history" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Logs & Order History</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Reviews</a>
@@ -187,43 +206,26 @@
                 <a class="breadcrumb-item text-dark" href="#">My Account</a>
                 <span class="breadcrumb-item active">Dashboard</span>
               </nav>
-              <div class=" p-3">
-                <h3 class="mb-4" style="font-weight: bolder;">Hi Smith ! Welcome to your dashboard</h3>
-                <div class="card shadow">
-                  <div class="card-body p-0 m-0">
-                    <table class="w-100">
-                      <br>
-                      <tr style="display: flex;">
-                        <td class="w-50" style="display: flex; justify-content: center; align-items: center; flex-direction: column; border-right: 2px solid #E9ECEF;">
-                          <h1 style="font-weight: bolder;">0</h1>
-                          <p>
-                          <i class="fa fa-phone text-warning" style="font-size: 20px;" aria-hidden="true"></i> Calls
-                        </p>
-                        </td>
-                        <td class="w-50" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                          <h1 style="font-weight: bolder;">0</h1>
-                          <p>
-                          <i class="fa fa-star text-warning" style="font-size: 20px;" aria-hidden="true"></i> Reviews
-                        </p>
-                        </td>
-                      </tr>
-                    </table>
-                   <div class="jumbotron p-5 mt-3">
-                     <div class="row">
-                       <div class="col-sm-12 col-md-4" style="display: flex; align-items: center; justify-content: flex-start;">
-                        <p class="h4" style="font-weight: 500;">Verified</p>
-                       </div>
-                       <div class="col-sm-12 col-md-8" style="display: flex; align-items: center; justify-content: flex-end;">
-                         <button type="button" name="" id="" class="btn btn-lg btn-success" style="border-radius: 50%;"><i class="fa fa-phone" aria-hidden="true"></i></button>&nbsp;&nbsp;
-                         <button type="button" name="" id="" class="btn btn-lg btn-light" style="border-radius: 50%;"><i class="fa fa-linkedin" aria-hidden="true"></i></button>&nbsp;&nbsp;
-                         <button type="button" name="" id="" class="btn btn-lg btn-success" style="border-radius: 50%;"><i class="fa fa-twitter" aria-hidden="true"></i></button>&nbsp;&nbsp;
-                         <button type="button" name="" id="" class="btn btn-lg btn-light" style="border-radius: 50%;"><i class="fa fa-facebook" aria-hidden="true"></i></button>&nbsp;&nbsp;
+              <div class=" p-2">
+                <div class="card border-0">
+                  <div class="card-body p-5 m-0">
+                <h3 class="mb-4" style="font-weight: bolder;">Notifications</h3>
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <p class="card-text"> <i class="fa fa-dot-circle-o text" aria-hidden="true"></i> &nbsp; Call request was accepted by the expert ( 21:20 PM 2021 Friday )</p>
                         </div>
-                     </div>
-                   </div>
-                   <div class="text-center h5">
-                     Member since May 2021
-                   </div>
+                    </div>
+                    <div class="card shadow mt-3">
+                        <div class="card-body">
+                            <p class="card-text"> <i class="fa fa-dot-circle-o text" aria-hidden="true"></i> &nbsp; Call request was rejected by the expert 7:09 PM</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-3">
+                        <div class="card-body">
+                            <p class="card-text"> <i class="fa fa-dot-circle-o text" aria-hidden="true"></i> &nbsp; You have sent request to expert for call request at 5:32 pm 2021 Monday</p>
+                        </div>
+                    </div>
+                  
                    <br>
                   </div>
                 </div>

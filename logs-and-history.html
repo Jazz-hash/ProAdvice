@@ -94,6 +94,12 @@
         width: 100%;
         border-radius: 50%;
       }
+      .vertical-center {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+      }
     </style>
   </head>
   <body>
@@ -165,9 +171,9 @@
                 <p class="text-center"><i class="fa fa-calendar" aria-hidden="true"></i> 02 Jul 1998, 24 years <br> <i class="fa fa-map-marker" aria-hidden="true"></i> New York, USA</p>
                   <hr style="width: 90%; background-color: #B59DC2;" />
                   <div class=" text-center">
-                    <a name="" id="" class="btn mt-2 btn-warning w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Dashboard</a>
+                    <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Dashboard</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; My Appointments</a>
-                    <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-history" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Logs & Order History</a>
+                    <a name="" id="" class="btn mt-2 btn-warning w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-history" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Logs & Order History</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Reviews</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; My favourite experts</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; My Profile & settings</a>
@@ -187,45 +193,195 @@
                 <a class="breadcrumb-item text-dark" href="#">My Account</a>
                 <span class="breadcrumb-item active">Dashboard</span>
               </nav>
-              <div class=" p-3">
-                <h3 class="mb-4" style="font-weight: bolder;">Hi Smith ! Welcome to your dashboard</h3>
-                <div class="card shadow">
+              <div class="pr-5 pl-5 pt-4">
+                <h3 class="mb-4" style="font-weight: bolder;">Logs & History</h3>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 mr-auto">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="" >Show</label>
+                                <input type="number" name="" id="" value="10" min="10" style="width: 70px;" class="form-control  ml-3 mr-3" /> 
+                                Entries 
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                            <form class="form-inline float-right">
+                                <div class="form-group">
+                                    <label for="">Search</label>
+                                    <input type="text" name="" id="" class="form-control ml-3">
+                                </div>
+                            </form>
+                    </div>
+                </div>
+                <br>
+                <div class="card shadow-sm">
                   <div class="card-body p-0 m-0">
-                    <table class="w-100">
-                      <br>
-                      <tr style="display: flex;">
-                        <td class="w-50" style="display: flex; justify-content: center; align-items: center; flex-direction: column; border-right: 2px solid #E9ECEF;">
-                          <h1 style="font-weight: bolder;">0</h1>
-                          <p>
-                          <i class="fa fa-phone text-warning" style="font-size: 20px;" aria-hidden="true"></i> Calls
-                        </p>
-                        </td>
-                        <td class="w-50" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                          <h1 style="font-weight: bolder;">0</h1>
-                          <p>
-                          <i class="fa fa-star text-warning" style="font-size: 20px;" aria-hidden="true"></i> Reviews
-                        </p>
-                        </td>
-                      </tr>
-                    </table>
-                   <div class="jumbotron p-5 mt-3">
-                     <div class="row">
-                       <div class="col-sm-12 col-md-4" style="display: flex; align-items: center; justify-content: flex-start;">
-                        <p class="h4" style="font-weight: 500;">Verified</p>
-                       </div>
-                       <div class="col-sm-12 col-md-8" style="display: flex; align-items: center; justify-content: flex-end;">
-                         <button type="button" name="" id="" class="btn btn-lg btn-success" style="border-radius: 50%;"><i class="fa fa-phone" aria-hidden="true"></i></button>&nbsp;&nbsp;
-                         <button type="button" name="" id="" class="btn btn-lg btn-light" style="border-radius: 50%;"><i class="fa fa-linkedin" aria-hidden="true"></i></button>&nbsp;&nbsp;
-                         <button type="button" name="" id="" class="btn btn-lg btn-success" style="border-radius: 50%;"><i class="fa fa-twitter" aria-hidden="true"></i></button>&nbsp;&nbsp;
-                         <button type="button" name="" id="" class="btn btn-lg btn-light" style="border-radius: 50%;"><i class="fa fa-facebook" aria-hidden="true"></i></button>&nbsp;&nbsp;
-                        </div>
-                     </div>
-                   </div>
-                   <div class="text-center h5">
-                     Member since May 2021
-                   </div>
-                   <br>
+<table class="table">
+    <thead class="thead-light">
+        <tr class="text-center">
+            <th>#</th>
+            <th>Expert</th>
+            <th>Connect Type</th>
+            <th>Call Hours</th>
+            <th>Amount</th>
+            <th>Payment Gateway</th>
+            <th>Status</th>
+            <th>Order Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="text-center">
+            <td scope="row">
+               1
+            </td>
+            <td >
+                Dr. Peter
+            </td>
+            <td >
+              Call
+            </td>
+            <td>
+               15 Mins
+            </td>
+            <td>
+               $90
+                </td>
+                <td>Stripe</td>
+            <td class="text-success">
+                Completed
+            </td>
+            <td>2021-04-26</td>
+        </tr>
+        <tr class="text-center">
+            <td scope="row">
+               2
+            </td>
+            <td >
+                Dr. Peter
+            </td>
+            <td >
+              Call
+            </td>
+            <td>
+               15 Mins
+            </td>
+            <td>
+               $90
+                </td>
+                <td>Stripe</td>
+            <td class="text-success">
+                Completed
+            </td>
+            <td>2021-04-26</td>
+        </tr>
+        <tr class="text-center">
+            <td scope="row">
+               3
+            </td>
+            <td >
+                Dr. Peter
+            </td>
+            <td >
+              Call
+            </td>
+            <td>
+               15 Mins
+            </td>
+            <td>
+               $90
+                </td>
+                <td>Stripe</td>
+            <td class="text-success">
+                Completed
+            </td>
+            <td>2021-04-26</td>
+        </tr>
+        <tr class="text-center">
+            <td scope="row">
+               4
+            </td>
+            <td >
+                Dr. Peter
+            </td>
+            <td >
+              Call
+            </td>
+            <td>
+               15 Mins
+            </td>
+            <td>
+               $90
+                </td>
+                <td>Stripe</td>
+            <td class="text-success">
+                Completed
+            </td>
+            <td>2021-04-26</td>
+        </tr>
+        <tr class="text-center">
+            <td scope="row">
+               5
+            </td>
+            <td >
+                Dr. Peter
+            </td>
+            <td >
+              Call
+            </td>
+            <td>
+               15 Mins
+            </td>
+            <td>
+               $90
+                </td>
+                <td>Stripe</td>
+            <td class="text-success">
+                Completed
+            </td>
+            <td>2021-04-26</td>
+        </tr>
+        <tr class="text-center">
+            <td scope="row">
+               6
+            </td>
+            <td >
+                Dr. Peter
+            </td>
+            <td >
+              Call
+            </td>
+            <td>
+               15 Mins
+            </td>
+            <td>
+               $90
+                </td>
+                <td>Stripe</td>
+            <td class="text-success">
+                Completed
+            </td>
+            <td>2021-04-26</td>
+        </tr>
+        
+       
+    </tbody>
+</table>                   
+                  
                   </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        Showing 1 to 5 from 5 Entries (Filtered from 0 total entries)
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="float-right">
+                        <button type="button" class="btn btn-outline-special">Previous</button>
+                        &nbsp;&nbsp; 1 &nbsp;&nbsp;
+                        <button type="button" class="btn btn-background">Next</button>
+                    </div>
+                    </div>
                 </div>
               </div>
             </div>

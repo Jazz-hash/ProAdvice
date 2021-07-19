@@ -94,6 +94,17 @@
         width: 100%;
         border-radius: 50%;
       }
+      .vertical-center {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+      }
+      .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #2DB70C;
+    background-color: #2DB70C;
+}
     </style>
   </head>
   <body>
@@ -165,7 +176,7 @@
                 <p class="text-center"><i class="fa fa-calendar" aria-hidden="true"></i> 02 Jul 1998, 24 years <br> <i class="fa fa-map-marker" aria-hidden="true"></i> New York, USA</p>
                   <hr style="width: 90%; background-color: #B59DC2;" />
                   <div class=" text-center">
-                    <a name="" id="" class="btn mt-2 btn-warning w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Dashboard</a>
+                    <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Dashboard</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; My Appointments</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-history" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Logs & Order History</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Reviews</a>
@@ -187,46 +198,136 @@
                 <a class="breadcrumb-item text-dark" href="#">My Account</a>
                 <span class="breadcrumb-item active">Dashboard</span>
               </nav>
-              <div class=" p-3">
-                <h3 class="mb-4" style="font-weight: bolder;">Hi Smith ! Welcome to your dashboard</h3>
+              <div class="pr-5 pl-5 pt-4">
+                <h3 class="mb-4" style="font-weight: bolder;">My Proile & Settings / Notifications</h3>
+                <h4 class="mb-4 text-secondary" style="font-weight: bolder;">Emails</h4>
+                <br>
                 <div class="card shadow">
-                  <div class="card-body p-0 m-0">
-                    <table class="w-100">
-                      <br>
-                      <tr style="display: flex;">
-                        <td class="w-50" style="display: flex; justify-content: center; align-items: center; flex-direction: column; border-right: 2px solid #E9ECEF;">
-                          <h1 style="font-weight: bolder;">0</h1>
-                          <p>
-                          <i class="fa fa-phone text-warning" style="font-size: 20px;" aria-hidden="true"></i> Calls
-                        </p>
-                        </td>
-                        <td class="w-50" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                          <h1 style="font-weight: bolder;">0</h1>
-                          <p>
-                          <i class="fa fa-star text-warning" style="font-size: 20px;" aria-hidden="true"></i> Reviews
-                        </p>
-                        </td>
-                      </tr>
-                    </table>
-                   <div class="jumbotron p-5 mt-3">
-                     <div class="row">
-                       <div class="col-sm-12 col-md-4" style="display: flex; align-items: center; justify-content: flex-start;">
-                        <p class="h4" style="font-weight: 500;">Verified</p>
-                       </div>
-                       <div class="col-sm-12 col-md-8" style="display: flex; align-items: center; justify-content: flex-end;">
-                         <button type="button" name="" id="" class="btn btn-lg btn-success" style="border-radius: 50%;"><i class="fa fa-phone" aria-hidden="true"></i></button>&nbsp;&nbsp;
-                         <button type="button" name="" id="" class="btn btn-lg btn-light" style="border-radius: 50%;"><i class="fa fa-linkedin" aria-hidden="true"></i></button>&nbsp;&nbsp;
-                         <button type="button" name="" id="" class="btn btn-lg btn-success" style="border-radius: 50%;"><i class="fa fa-twitter" aria-hidden="true"></i></button>&nbsp;&nbsp;
-                         <button type="button" name="" id="" class="btn btn-lg btn-light" style="border-radius: 50%;"><i class="fa fa-facebook" aria-hidden="true"></i></button>&nbsp;&nbsp;
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                            Call Reminder
                         </div>
-                     </div>
-                   </div>
-                   <div class="text-center h5">
-                     Member since May 2021
-                   </div>
-                   <br>
+                        <div class="col">
+                            <div class="float-right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col">
+                            Chat Reminder
+                        </div>
+                        <div class="col">
+                            <div class="float-right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col">
+                            Email Reminder
+                        </div>
+                        <div class="col">
+                            <div class="float-right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col">
+                            Pro Advice Recommendations, Latest News & Updates
+                        </div>
+                        <div class="col">
+                            <div class="float-right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                      
                   </div>
                 </div>
+               
+              </div>
+              <div class="pr-5 pl-5 pt-4">
+                <h4 class="mb-4 text-secondary" style="font-weight: bolder;">SMS</h4>
+                <br>
+                <div class="card shadow">
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                            Call Reminder
+                        </div>
+                        <div class="col">
+                            <div class="float-right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col">
+                            Chat Reminder
+                        </div>
+                        <div class="col">
+                            <div class="float-right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col">
+                            Email Reminder
+                        </div>
+                        <div class="col">
+                            <div class="float-right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col">
+                            Pro Advice Recommendations, Latest News & Updates
+                        </div>
+                        <div class="col">
+                            <div class="float-right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                </div>
+               
               </div>
             </div>
         </div>

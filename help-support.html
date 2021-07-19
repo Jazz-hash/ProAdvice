@@ -94,6 +94,12 @@
         width: 100%;
         border-radius: 50%;
       }
+      .vertical-center {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+      }
     </style>
   </head>
   <body>
@@ -156,7 +162,8 @@
     </header>
     <section>
         <div class="row w-100 m-0 p-0">
-            <div class="col-sm-12 col-md-3 background p-3 text-white" style="display: flex; align-content: center; justify-content: center; flex-direction: column;">
+            <div class="col-sm-12 col-md-3 background p-3 text-white">
+                <br>
                 <div class="image-holder m-auto">
                   <img src="./images/ruby.png" alt="user" class="usr-image" />
                 </div>
@@ -165,14 +172,14 @@
                 <p class="text-center"><i class="fa fa-calendar" aria-hidden="true"></i> 02 Jul 1998, 24 years <br> <i class="fa fa-map-marker" aria-hidden="true"></i> New York, USA</p>
                   <hr style="width: 90%; background-color: #B59DC2;" />
                   <div class=" text-center">
-                    <a name="" id="" class="btn mt-2 btn-warning w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Dashboard</a>
+                    <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Dashboard</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; My Appointments</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-history" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Logs & Order History</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Reviews</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; My favourite experts</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; My Profile & settings</a>
                     <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-shield-alt" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Billings & Payments</a>
-                    <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Support</a>
+                    <a name="" id="" class="btn mt-2 btn-warning w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Support</a>
                     <br>
                     <br>
                     <br>
@@ -187,43 +194,69 @@
                 <a class="breadcrumb-item text-dark" href="#">My Account</a>
                 <span class="breadcrumb-item active">Dashboard</span>
               </nav>
-              <div class=" p-3">
-                <h3 class="mb-4" style="font-weight: bolder;">Hi Smith ! Welcome to your dashboard</h3>
-                <div class="card shadow">
-                  <div class="card-body p-0 m-0">
-                    <table class="w-100">
-                      <br>
-                      <tr style="display: flex;">
-                        <td class="w-50" style="display: flex; justify-content: center; align-items: center; flex-direction: column; border-right: 2px solid #E9ECEF;">
-                          <h1 style="font-weight: bolder;">0</h1>
-                          <p>
-                          <i class="fa fa-phone text-warning" style="font-size: 20px;" aria-hidden="true"></i> Calls
-                        </p>
-                        </td>
-                        <td class="w-50" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                          <h1 style="font-weight: bolder;">0</h1>
-                          <p>
-                          <i class="fa fa-star text-warning" style="font-size: 20px;" aria-hidden="true"></i> Reviews
-                        </p>
-                        </td>
-                      </tr>
-                    </table>
-                   <div class="jumbotron p-5 mt-3">
-                     <div class="row">
-                       <div class="col-sm-12 col-md-4" style="display: flex; align-items: center; justify-content: flex-start;">
-                        <p class="h4" style="font-weight: 500;">Verified</p>
-                       </div>
-                       <div class="col-sm-12 col-md-8" style="display: flex; align-items: center; justify-content: flex-end;">
-                         <button type="button" name="" id="" class="btn btn-lg btn-success" style="border-radius: 50%;"><i class="fa fa-phone" aria-hidden="true"></i></button>&nbsp;&nbsp;
-                         <button type="button" name="" id="" class="btn btn-lg btn-light" style="border-radius: 50%;"><i class="fa fa-linkedin" aria-hidden="true"></i></button>&nbsp;&nbsp;
-                         <button type="button" name="" id="" class="btn btn-lg btn-success" style="border-radius: 50%;"><i class="fa fa-twitter" aria-hidden="true"></i></button>&nbsp;&nbsp;
-                         <button type="button" name="" id="" class="btn btn-lg btn-light" style="border-radius: 50%;"><i class="fa fa-facebook" aria-hidden="true"></i></button>&nbsp;&nbsp;
+              <div class=" p-2">
+                <div class="card border-0">
+                  <div class="card-body p-5 m-0">
+                <h3 class="mb-4" style="font-weight: bolder;">Help & Support</h3>
+
+                    <div id="accordianId" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="section1HeaderId">
+                                <h5 class="mb-0">
+                                    <a class="text-dark" data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                             How It Works
+                            </a>
+                            <a class="text-dark float-right"  data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                                <i class="fas fa-caret-right    "></i>
+                                    </h5>
+                                </a>
+                                </h5>
+                            </div>
+                            <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
+                                <div class="card-body">
+                                    Section 1 content
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                   </div>
-                   <div class="text-center h5">
-                     Member since May 2021
-                   </div>
+                        <div class="card mt-3">
+                            <div class="card-header" role="tab" id="section2HeaderId">
+                                <h5 class="mb-0">
+                                    <a class="text-dark"  data-toggle="collapse" data-parent="#accordianId" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId">
+                              Help Center
+                            </a>
+                            <a  class="text-dark float-right"  data-toggle="collapse" data-parent="#accordianId" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId">
+                            <i class="fas fa-caret-right    "></i>
+                                </h5>
+                            </a>
+                            </div>
+                            <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                                <div class="card-body">
+                                    Section 2 content
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <div class="card-header" role="tab" id="section3HeaderId">
+                                <h5 class="mb-0">
+                                    <a class="text-dark"  data-toggle="collapse" data-parent="#accordianId" href="#section3ContentId" aria-expanded="true" aria-controls="section3ContentId">
+                              Terms of Service
+                            </a>
+                            <a class="text-dark float-right"  data-toggle="collapse" data-parent="#accordianId" href="#section3ContentId" aria-expanded="true" aria-controls="section3ContentId">
+                                <i class="fas fa-caret-right    "></i>
+                                    </h5>
+                                </a>
+                                </h5>
+                            </div>
+                            <div id="section3ContentId" class="collapse in" role="tabpanel" aria-labelledby="section3HeaderId">
+                                <div class="card-body">
+                                    Section 2 content
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    Need help? <a href="" class="text" style="text-decoration: underline;">Contact Support</a>
+                    
                    <br>
                   </div>
                 </div>
