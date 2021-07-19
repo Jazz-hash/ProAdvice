@@ -84,6 +84,16 @@
           width: 220px;
           border-radius: 20px;
       }
+      .image-holder {
+        border: 2px solid #FFF;
+        padding: 10px;
+        border-radius: 50%;
+        width: 150px;
+      }
+      .usr-image {
+        width: 100%;
+        border-radius: 50%;
+      }
     </style>
   </head>
   <body>
@@ -138,10 +148,41 @@
     </header>
     <section>
         <div class="row">
-            <div class="col-4 background p-3">
-                
+            <div class="col-3 background p-3 text-white" style="display: flex; align-content: center; justify-content: center; flex-direction: column;">
+                <div class="image-holder m-auto">
+                  <img src="./images/ruby.png" alt="user" class="usr-image" />
+                </div>
+                <div class="m-auto pt-4 w-100">
+                <h3 class="text-center">Smith Jons</h3>
+                <p class="text-center"><i class="fa fa-calendar" aria-hidden="true"></i> 02 Jul 1998, 24 years <br> <i class="fa fa-map-marker" aria-hidden="true"></i> New York, USA</p>
+                  <hr style="width: 90%; background-color: #B59DC2;" />
+                  <div class=" text-center">
+                    <a name="" id="" class="btn mt-2 btn-warning w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Dashboard</a>
+                    <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; My Appointments</a>
+                    <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-history" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Logs & Order History</a>
+                    <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Reviews</a>
+                    <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; My favourite experts</a>
+                    <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; My Profile & settings</a>
+                    <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-shield-alt" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Billings & Payments</a>
+                    <a name="" id="" class="btn mt-2 w-75 text-left text-white" style="border-radius: 5px; background-color: FAC657 !important;" href="#" role="button">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Support</a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p><b>Are you an expert /</b><br>View my expert profile</p>
+                    <p ><a href="" class="text-warning" style="text-decoration: underline;">Logout</a></p> 
+                  </div>
+              </div> 
             </div>
-            <div class="col-8"></div>
+            <div class="col-9 p-0 m-0">
+              <nav class="breadcrumb text-dark">
+                <a class="breadcrumb-item text-dark" href="#">My Account</a>
+                <span class="breadcrumb-item active">Dashboard</span>
+              </nav>
+              <div class="container">
+                <h3>Hi Smith ! Welcome to your dashboard</h3>
+              </div>
+            </div>
         </div>
     </section>
 
